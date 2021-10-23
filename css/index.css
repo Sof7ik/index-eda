@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*, *::after, *::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img
+{
+    display: block;
+    object-fit: cover;
+}
+
+button
+{
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+    display: block;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.container-1194
+{
+    max-width: calc(1194px + 40px);
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+#page-header
+{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page-header .logo
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#page-header .logo span
+{
+    margin-left: 7px;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.search-panel
+{
+    background-color: rgba(238, 238, 238, 0.71);
+    border-radius: 10px;
+
+    display: flex;
+
+    flex-grow: 1;
+    max-width: 620px;
+}
+
+.search-panel input
+{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+
+    padding: 13px 0 13px 20px;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+
+    color: #57565B;
+}
+
+.search-panel #search-food
+{
+    padding: 0 18px;
+}
+.search-panel #search-food svg path
+{
+    transition: fill .3s;
+}
+
+.search-panel #search-food:hover svg path
+{
+    fill: #EC762A;
+}
+
+.right-header
+{
+    display: flex;
+}
+
+.login-btn
+{
+    background-color: #EBEBEB;
+    border-radius: 50px;
+    padding: 16px 29px;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+}
+
+.shopping-cart
+{
+    background-color: #F66A15;
+    position: relative;
+    padding: 13px;
+    border-radius: 50%;
+
+    margin-left: 30px;
+}
+
+.shopping-cart .goods-quantity
+{
+    display: block;
+
+    position: absolute;
+    right: 0;
+
+    background-color: #FFAF19;
+    
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 9px;
+
+    color: #000000;
+
+    padding: 5px;
+    border-radius: 50%;
+}
