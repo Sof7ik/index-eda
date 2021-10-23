@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Индекс.Еда</title>
+    <link rel="shortcut icon" href="/assets/img/logo.svg" type="image/svg">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
@@ -48,7 +49,7 @@
 
         <main>
             <div class="container-1194">
-                <div class="swiper actions-slider">
+                <article class="swiper actions-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide" style="background-image: url('./assets/img/actions/autumn.jpg');">
                             <div class="slide-content">
@@ -87,7 +88,7 @@
                     <!-- If we need navigation buttons -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
-                </div>
+                </article>
 
                 <article class="promo">
                     <section class="promo-item" style="background-image: url('./assets/img/promo/sweet-cart.jpg');">
@@ -169,44 +170,121 @@
                     <h2 class="article-title">Доставка готовой еды на неделю</h2>
 
                     <div class="categories-wrapper">
-                        <section class="ready-food__category-item">
-                            <span class="category-item__category-name">ЗОЖ</span>
+                        <section class="ready-food__category-item"
+                            style="background-image: url('./assets/img/ready-food/zozh.jpg');">
+                            <a href="#">
+                                <span class="category-item__category-name"
+                                    style="background-color: #D0FD89; color: #49494F;">ЗОЖ</span>
+                            </a>
                         </section>
 
-                        <section class="ready-food__category-item">
-                            <span class="category-item__category-name">Овощное</span>
+                        <section class="ready-food__category-item"
+                            style="background-image: url('./assets/img/ready-food/vegetables.jpg');">
+                            <a href="#">
+                                <span class="category-item__category-name"
+                                    style="background-color: #AEBC41; color: #fff;">Овощное</span>
+                            </a>
                         </section>
 
-                        <section class="ready-food__category-item">
-                            <span class="category-item__category-name">Мясное</span>
+                        <section class="ready-food__category-item"
+                            style="background-image: url('./assets/img/ready-food/meat.jpg');">
+                            <a href="#">
+                                <span class="category-item__category-name"
+                                    style="background-color: #B86B78; color: #fff;">Мясное</span>
+                            </a>
                         </section>
 
-                        <section class="ready-food__category-item">
-                            <span class="category-item__category-name">Птица</span>
+                        <section class="ready-food__category-item"
+                            style="background-image: url('./assets/img/ready-food/birds.jpg');">
+                            <a href="#">
+                                <span class="category-item__category-name"
+                                    style="background-color: #D68334; color: #fff;">Птица</span>
+                            </a>
                         </section>
 
-                        <section class="ready-food__category-item">
-                            <span class="category-item__category-name">Рыбное</span>
+                        <section class="ready-food__category-item"
+                            style="background-image: url('./assets/img/ready-food/fish.jpg');">
+                            <a href="#">
+                                <span class="category-item__category-name"
+                                    style="background-color: #CD6255; color: #fff;">Рыбное</span>
+                            </a>
                         </section>
 
-                        <section class="ready-food__category-item">
-                            <span class="category-item__category-name">Детское</span>
+                        <section class="ready-food__category-item"
+                            style="background-image: url('./assets/img/ready-food/children.jpg');">
+                            <a href="#">
+                                <span class="category-item__category-name"
+                                    style="background-color: #FFFDBF; color: #49494F;">Детское</span>
+                            </a>
                         </section>
 
-                        <section class="ready-food__category-item">
-                            <span class="category-item__category-name">Родителям</span>
+                        <section class="ready-food__category-item"
+                            style="background-image: url('./assets/img/ready-food/parents.jpg');">
+                            <a href="#">
+                                <span class="category-item__category-name"
+                                    style="background-color: #F6FDC8; color: #49494F;">Родителям</span>
+                            </a>
                         </section>
 
-                        <section class="ready-food__category-item">
-                            <span class="category-item__category-name">Праздничное</span>
+                        <section class="ready-food__category-item"
+                            style="background-image: url('./assets/img/ready-food/holidays.jpg');">
+                            <a href="#">
+                                <span class="category-item__category-name"
+                                    style="background-color: #FEF7FE; color: #49494F;">Праздничное</span>
+                            </a>
                         </section>
                     </div>
                 </article>
+
             </div>
+
+            <article class="dish-categories">
+                <div class="container-1194">
+                    <h2 class="article-title">Категории блюд</h2>
+
+                    <section class="filter-tabs">
+                        <button class="filter-tabs__tab-item active" data-dishCategory-ID="1">Популярные блюда</button>
+                        <button class="filter-tabs__tab-item" data-dishCategory-ID="2">Овощное</button>
+                        <button class="filter-tabs__tab-item" data-dishCategory-ID="3">Мясное</button>
+                    </section>
+
+                    <div class="dish-categories-lists-wrapper">
+                        <div class="dish-category-list">
+
+                        </div>
+                    </div>
+                </div>
+            </article>
         </main>
 
         <footer id="page-footer">
+            <div class="container-1194">
+                <section class="left-footer">
+                    <a href="/" class="footer-logo">
+                        <img src="./assets/img/logo.svg" alt="логтип Индекс.Еда" class="footer-logo">
+                        <span class="footer-logo-text">Индекс<br>Еда</span>
+                    </a>
 
+                    <nav class="footer-nav">
+                        <a href="#">Доставка и оплата</a>
+                        <a href="#">Напишите нам</a>
+                    </nav>
+                </section>
+
+                <section class="footer-social">
+                    <a href="https://t.me">
+                        <img src="./assets/img/social/telegram.svg" alt="иконка Telegram">
+                    </a>
+
+                    <a href="https://vk.com/">
+                        <img src="./assets/img/social/vk.svg" alt="иконка VK">
+                    </a>
+
+                    <a href="https://instagram.com">
+                        <img src="./assets/img/social/inst.svg" alt="иконка Instagram">
+                    </a>
+                </section>
+            </div>
         </footer>
     </div>
 </body>
